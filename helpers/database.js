@@ -4,13 +4,13 @@ dotenv.config();
 import mongoose from "mongoose";
 
 var DB_POOL = process.env.NODE_ENV
-  ? process.env.REMOTE_DB
+  ? "mongodb+srv://slum2school:slumslum123@@cluster0.fncpb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
   : process.env.MONGODBURL;
 
 let connection;
 
 try {
-  connection = mongoose.connect(process.env.MONGODBURL, {
+  connection = mongoose.connect(DB_POOL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });

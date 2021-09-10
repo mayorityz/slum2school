@@ -12,7 +12,7 @@ export const init = async ({
   zip,
 }) => {
   var origin = process.env.NODE_ENV
-    ? "https://slum2school.surge.sh/"
+    ? "https://slum2school.herokuapp.com/paystack/verify"
     : "http://localhost:4500/paystack/verify";
 
   try {

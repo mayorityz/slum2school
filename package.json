@@ -6,7 +6,7 @@
   "license": "MIT",
   "engines": {
     "node": "14.15.1",
-    "yarn": "1.22.11"
+    "npm": "7.21.0"
   },
   "type": "module",
   "scripts": {
