@@ -4,7 +4,7 @@ dotenv.config();
 import mongoose from "mongoose";
 
 var DB_POOL = process.env.NODE_ENV
-  ? "mongodb+srv://slum2school:slumslum123@@cluster0.fncpb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+  ? "mongodb+srv://slum2school:8RAYaeW9NqOT6dht@cluster0.fncpb.mongodb.net/db?retryWrites=true&w=majority"
   : process.env.MONGODBURL;
 
 let connection;
