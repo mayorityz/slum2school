@@ -15,6 +15,8 @@ export const init = async ({
     ? "https://slum2school.herokuapp.com/paystack/verify"
     : "http://localhost:4500/paystack/verify";
 
+  console.log("initial ..", origin);
+
   try {
     let inNaira = amount / 100;
     let res = await Py.transaction.initialize({
