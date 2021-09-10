@@ -8,7 +8,7 @@ var DB_POOL = process.env.NODE_ENV
   : process.env.MONGODBURL;
 
 let connection;
-
+console.log(DB_POOL);
 try {
   connection = mongoose.connect(DB_POOL, {
     useNewUrlParser: true,
