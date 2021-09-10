@@ -38,7 +38,6 @@ export const verify = async (req, res) => {
     try {
       let save = new PaymentModel({
         ...metadata,
-        amount: metadata.amount / 100,
       });
       let status = await save.save();
       console.log(status);
@@ -52,7 +51,7 @@ export const verify = async (req, res) => {
 };
 
 export const history = async (req, res) => {
-  await PaymentModel.find({}, (err, result) => {
+  PaymentModel.find({}, (err, result) => {
     if (err) res.status(200).json({ status: false, message: err });
     else res.status(200).json({ status: true, message: result });
   });

@@ -16,12 +16,13 @@ export const init = async ({
     : "http://localhost:4500/paystack/verify";
 
   try {
+    let inNaira = amount / 100;
     let res = await Py.transaction.initialize({
       amount,
       reference,
       email,
       metadata: {
-        amount,
+        amount: inNaira,
         email,
         duration,
         zip,
