@@ -3,7 +3,7 @@ import { init, validate } from "./../../payments/Paystack.js";
 import { v4 as uuidv4 } from "uuid";
 
 var origin = process.env.NODE_ENV
-  ? "https://slum2school.surge.sh/"
+  ? "https://slum2school.org/"
   : "http://localhost:3000";
 
 export const initializePayment = async (req, res) => {
