@@ -13,7 +13,6 @@ const paymentSchema = new mongoose.Schema(
     },
     memberType: {
       type: String,
-      required: true,
     },
     duration: {
       type: String,
